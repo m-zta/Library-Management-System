@@ -7,8 +7,6 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 # Include selected source files
 add_library(lms
     src/library.c
-    src/library.h
-    src/main.c
 )
 
 # Include directories
