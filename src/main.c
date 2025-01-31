@@ -1,15 +1,13 @@
-#include "library.h"
-
-#include <stdbool.h>
 #include <stdio.h>
 
-int main() {
-    bool is_true = true;
+#define KZERO -273
 
-    if (is_true) {
-        printf("This is true.\n");
-    } else {
-        printf("This is false.\n");
+int main() {
+    for (int degC = -40; degC <= 50; degC += 7) {
+        float degF = 9.0 / 5.0 * degC + 32.0;
+        int   kelv = KZERO + degC;
+
+        printf("Ce: %4d \t Fa: %6.1f \t Kel: %4d\n", degC, degF, kelv);
     }
 
     return 0;
